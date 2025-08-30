@@ -1,0 +1,485 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: -0.05em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #1effd0;
+}
+
+/* Process Section */
+.process {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.step {
+  background-color: #111;
+  padding: 20px;
+  width: 23%;
+  border-radius: 8px;
+  text-align: left;
+  position: relative;
+}
+
+.step h3 {
+  margin: 20px 0 10px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.step p {
+  font-size: 0.9rem;
+  color: #bbb;
+  line-height: 1.4;
+}
+
+/* Icons */
+.icon {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 10px;
+}
+
+/* Circle */
+.circle {
+  border-radius: 50%;
+  background: #4ac2f5;
+}
+
+/* Square */
+.square {
+  background: #f555f2;
+}
+
+/* Donut */
+.donut {
+  background:
+    radial-gradient(circle at center, transparent 65%, #87e2a2 66%);
+  position: relative;
+}
+
+.donut::before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 18px;
+  height: 18px;
+  background: #111;
+  border-radius: 50%;
+}
+
+/* Triangles */
+.triangles {
+  position: relative;
+}
+
+.triangles::before,
+.triangles::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.triangles::before {
+  border-width: 0 12px 20px 12px;
+  border-color: transparent transparent #47e2c6 transparent;
+  top: 0;
+  left: 0;
+}
+
+.triangles::after {
+  border-width: 12px 12px 0 12px;
+  border-color: #1affd0 transparent transparent transparent;
+  bottom: 0;
+  right: 0;
+}
+
+/* Works Section */
+.works {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.work-item {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.work-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.work-item h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.work-item p {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* Testimonial */
+.testimonial {
+  background-color: #111;
+  border-radius: 8px;
+  padding: 30px 20px;
+  margin: 40px 0;
+  font-style: italic;
+  position: relative;
+}
+
+.testimonial blockquote p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.testimonial footer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.testimonial footer img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.testimonial footer cite {
+  font-weight: 600;
+  font-style: normal;
+  color: #1affd0;
+}
+
+/* Resources */
+.resources {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.resource {
+  padding: 30px;
+  border-radius: 8px;
+  width: 48%;
+  color: #fff;
+  position: relative;
+}
+
+/* Bluebook */
+.bluebook {
+  background-color: #3b7fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.bluebook button {
+  margin-top: 20px;
+  background-color: #3080ff;
+  border: none;
+  padding: 12px 24px;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bluebook button:hover {
+  background-color: #1d67e3;
+}
+
+/* FAQs */
+.faqs {
+  background-color: #33ddaa;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.faqs h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.faqs p {
+  font-size: 1.1rem;
+  margin-top: 0;
+  color: #073c21;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  border-top: 1px solid #222;
+  padding-top: 30px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 40%;
+}
+
+.contact img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+}
+
+.contact h3 {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.proposal-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 55%;
+}
+
+.proposal-form input,
+.proposal-form select {
+  background: #111;
+  border: 1px solid #333;
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+  flex: 1 1 120px;
+}
+
+.proposal-form button {
+  background-color: #1affd0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  flex: 1 1 100px;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+.proposal-form button:hover {
+  background-color: #13c4b7;
+}
+
+.branding {
+  color: #555;
+  font-weight: 400;
+  font-size: 0.85rem;
+  align-self: flex-end;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .process, .works, .resources {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .process {
+    display: block;
+  }
+  .step {
+    margin-bottom: 30px;
+    width: 100% !important;
+  }
+  .works {
+    display: block;
+  }
+  .work-item {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .resources {
+    flex-direction: column;
+  }
+  .resource {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .contact, .proposal-form {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+ .container1 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  /* نص صغير */
+  .text-small {
+    position: absolute;
+    top: 4px;
+    left: 16px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  /* الشكل 1: الصليب الوردي */
+  .pink-cross {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #ef62ff;
+  }
+  .pink-cross::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: #ef62ff;
+    top: 40px;
+    left: 50px;
+    transform-origin: left bottom;
+    transform: rotate(45deg);
+  }
+  /* الشكل 2: مثلث سماوي */
+  .cyan-triangle {
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 100px solid #4effff;
+  }
+  /* الشكل 3: الصليب الأصفر مع دائرة */
+  .yellow-cross {
+    position: relative;
+    width: 120px;
+    height: 120px;
+  }
+  .yellow-cross .bar-vertical,
+  .yellow-cross .bar-horizontal {
+    position: absolute;
+    background: #fcca14;
+  }
+  .yellow-cross .bar-vertical {
+    width: 30px;
+    height: 120px;
+    top: 0;
+    left: 45px;
+  }
+  .yellow-cross .bar-horizontal {
+    width: 120px;
+    height: 30px;
+    top: 45px;
+    left: 0;
+  }
+  .yellow-cross .center-circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    top: 35px;
+    left: 35px;
+  }
+  /* الشكل 4: دائرة زرقاء */
+  .blue-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #4aa9e9;
+    border-radius: 50%;
+  }
+  /* الشكل 5: مستطيل أخضر قصير */
+  .green-rectangle {
+    width: 40px;
+    height: 10px;
+    background-color: #6bffb0;
+  }
+  /* الشكل 6: ثلاثة خطوط مائلة باللون الوردي */
+  .pink-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .pink-lines div {
+    background-color: #ef62ff;
+    height: 8px;
+    width: 140px;
+    transform-origin: left center;
+  }
+  .pink-lines div:nth-child(1) {
+    transform: rotate(8deg);
+  }
+  .pink-lines div:nth-child(2) {
+    transform: rotate(-6deg);
+  }
+  .pink-lines div:nth-child(3) {
+    transform: rotate(5deg);
+  }
