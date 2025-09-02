@@ -45,51 +45,293 @@
   </div>
 
 
-</section>
+ 
 
 
 
 
-  <section class="process">
-    <div class="step">
-      <div class="icon circle"></div>
-      <h3>Discovery</h3>
-      <p>We start every project with a Discovery workshop to kick-off shared project understanding, define opportunity, and set success criteria based on your business goals and outcomes.</p>
+
+
+
+ 
+ 
+
+
+ 
+
+
+
+
+  <section class="secc">
+ 
+ 
+  <style>
+    /* Reset */
+   
+
+    .secc {
+     
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000000;
+      color: #eee;
+      display: flex;
+      justify-content: right;
+      align-items: flex-start;
+     
+     
+    }
+
+    .container1 {
+      max-width: 1200px;
+      width: 100%;
+      display: flex;
+      gap: 0px;
+      border: 1px solid #000000;
+      background-color: #000000;
+      
+    }
+
+    .box {
+      background-color: #000000;
+      flex: 1;
+      padding: 20px;
+      border: 1px solid #1D1D1D;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      min-height: 500px;
+    }
+
+    .box h2 {
+      margin-top: 0;
+      font-weight: 600;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+    }
+
+    .box p {
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.5;
+      flex-grow: 1;
+    }
+
+    .icon {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative
+      ;
+      left: 0px;
+    }
+
+    /* Specific shapes */
+
+    .circle {
+      width: 40px;
+      height: 40px;
+      background-color: #4a90e2;
+      border-radius: 700%;
+    }
+
+    .square {
+      width: 40px;
+      height: 40px;
+      background-color: #e24aff;
+    }
+
+    .semi-circle-container {
+      position: relative;
+      
+      width: 40px;
+      height: 60px;
+    }
+
+    .semi-circle-top,
+    .semi-circle-bottom {
+      width: 40px;
+      height: 20px;
+      background-color: #3ae089;
+      position: absolute;
+      left: 0;
+      border-radius: 20px 20px 0 0;
+    }
+
+    .semi-circle-top {
+      top: 0;
+      border-radius: 20px 20px 0 0;
+    }
+
+    .semi-circle-bottom {
+      bottom: 0;
+      border-radius: 0 0 20px 20px;
+
+    }
+
+    .yellow-dot {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 12px;
+      height: 12px;
+      background-color: #f9dd36;
+      border-radius: 50%;
+      z-index: 10;
+    }
+
+    .triangles {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .triangle {
+      width: 0;
+      height: 0;
+       border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-bottom: 20px solid #4ef4f1;
+      margin: 20px;
+      position: relative
+      ;
+      left: 50px;
+      transform-origin: center;
+    }
+
+ 
+  
+    .triangle:nth-child(2) {
+     position: absolute;
+     left: 50px;
+      transform: rotate(270deg);
+    }
+    .triangle:nth-child(3) {
+      transform: rotate(180deg);
+       position: absolute;
+     left: 20px;
+    }
+    
+
+    /* Read more */
+    .read-more {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #eee;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+      font-weight: 400;
+    }
+
+    .read-more:hover {
+      color: #4a90e2;
+    }
+
+    .read-more::before {
+      content: "›";
+      margin-right: 6px;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .box {
+        min-height: auto;
+      }
+    }
+  </style>
+ 
+  <div class="container1">
+    <div class="box">
+      <h2>Discovery</h2>
+      <p>
+        We start every new client interaction with an in-depth discovery call where we get to know each other, discuss your current and future objectives, and recommend the best course of action.
+      </p>
+      <div class="icon">
+        <div class="circle"></div>
+      </div>
     </div>
-    <div class="step">
-      <div class="icon square"></div>
-      <h3>Strategy</h3>
-      <p>We create a shared strategic vision based on insights, driving digital transformation and new capabilities for your business.</p>
+
+    <div class="box">
+      <h2>Strategy</h2>
+      <p>
+        Every end-to-end project of ours begins with a bespoke pre-build strategy. From brand ID consultation to in-depth code reviews we're here to set the stage for success.
+      </p>
+      <div class="icon">
+        <div class="square"></div>
+      </div>
     </div>
-    <div class="step">
-      <div class="icon donut"></div>
-      <h3>Design</h3>
-      <p>Above all else, a compelling UX/UI design reflects an understanding of your business’s challenges and brand identity to create a differentiated experience.</p>
+
+    <div class="box">
+      <h2>Design</h2>
+      <p>
+        After we have a comprehensive understanding of your brand, we'll be ready to move onto design. Each page or asset will be designed, reviewed, and given your stamp of approval.
+      </p>
+      <div class="icon">
+        <div class="semi-circle-container">
+          <div class="semi-circle-top"></div>
+          <div class="semi-circle-bottom"></div>
+          <div class="yellow-dot"></div>
+        </div>
+      </div>
     </div>
-    <div class="step">
-      <div class="icon triangles"></div>
-      <h3>Build</h3>
-      <p>We partner with skilled, leading engineering teams to develop design into technology solutions, supplemented by development, success & support.</p>
+
+    <div class="box">
+      <h2>Build</h2>
+      <p>
+        Whether we've just finished designing your new site or you're handing off finished designs for us to develop in Webflow, we're here to apply our trusted development process to your project.
+      </p>
+      <div class="icon triangles">
+      
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        
+      </div>
     </div>
+  </div>
+
+  
+
+     
   </section>
 
-  <section class="works">
-    <div class="work-item zendrive">
+
+
+
+
+
+
+
+  <section class="work-section"">
+    <div class="work-item">
       <img src="assets/Images/1.png" alt="Zendrive" />
       <h3>Zendrive</h3>
       <p>Zendrive’s safety platform helps auto insurers to measure driver behavior using smartphone sensors to improve safety for their clients.</p>
     </div>
-    <div class="work-item coresite">
+    <div class="work-item">
       <img src="assets/Images/2.png" alt="CoreSite" />
       <h3>CoreSite</h3>
       <p>CoreSite offers data center, colocation and interconnection solutions.</p>
     </div>
-    <div class="work-item searchio">
+    <div class="work-item">
       <img src="assets/Images/3.png" alt="Search.io" />
       <h3>Search.io</h3>
       <p>Search.io is a leading search and discovery platform for e-commerce companies. Search.io is featured on SVZ.</p>
     </div>
-    <div class="work-item whiteboard">
+    <div class="work-item">
       <img src="assets/Images/4.png" alt="Whiteboard" />
       <h3>Whiteboard</h3>
       <p>We partnered with Whiteboard to define, architect, and deploy business agility technology platforms.</p>
