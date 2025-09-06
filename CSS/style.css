@@ -13,12 +13,124 @@ body {
   padding: 20px;
 }
 
+:root{
+    --white: #ffffff;
+    --bblake: #00000000;
+    --color1:#FB72FF;
+    --color2:#4CABE1;
+    --color3:#62EB9A;
+    --color4:#FFD426;
+    --color5:#60FDF4;
+    --color6:#0bc559;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+#navbar {
+    margin-top: 40px;
+}
+#navbar ul{
+    display: flex;
+    justify-content: end;
+    margin: 20px 10px;
+    background-color: var(--bblake);
+
+}
+#navbar ul li a {
+    padding: 15px 20px;
+    font-weight: 600;
+}
+ #navbar ul li a:hover{
+    border-bottom: 2px solid var(--color1);
+    color: var(--color1);
+}
 /* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+
+.title-home {
+  margin-top: 5%;
+}
+
+header {
+  height: 80vh;
+  margin: 20px;
+}
+
+header .title-home p {
+  width: 550px;
+  font-weight: 200;
+  font-size: 30px;
+  margin-bottom: 2%;
+  margin-left: 27%;
+  max-width: 90vw; /* للتأكد من عدم تجاوز العرض في الشاشات الصغيرة */
+}
+
+header .title-home span {
+  font-size: 10px;
+  font-variant: small-caps;
+  margin-left: 27%;
+}
+
+header .disaen {
+  position: relative;
+  height: 50vh;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    margin: 10px;
+  }
+  
+  header .title-home p,
+  header .title-home span {
+    margin-left: 5%;
+    width: 90vw;
+    font-size: 20px;
+  }
+  
+  header .title-home span {
+    font-size: 12px;
+  }
+  
+  header .disaen {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 480px) {
+  header .title-home p {
+    font-size: 18px;
+    margin-left: 5%;
+    width: 90vw;
+  }
+  
+  header .title-home span {
+    font-size: 10px;
+    margin-left: 5%;
+  }
+
+  header .disaen {
+    height: 25vh;
+  }
+}
+
+
+
+
+
+
 
 .logo {
   font-weight: 900;
